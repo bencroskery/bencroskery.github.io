@@ -1,27 +1,33 @@
+@highlight: #ff8d30;
+
 * {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     box-sizing: border-box;
     text-decoration: none;
 }
 
 body {
-    background: #2F3238;
+    background: #32333a;
     color: #FFF;
-    opacity: 0;
     transition: opacity 1s;
+}
+
+::selection {
+    background: @highlight;
+}
+::-moz-selection {
+    background: @highlight;
 }
 
 h1 {
     font-size: 4em;
-    font-weight: 800;
-    margin-bottom: 0;
+    margin-bottom: 0.3em;
 }
 
 h2 {
     font-size: 2em;
-    font-weight: lighter;
-    color: #8C8C8C;
+    color: #adadad;
 }
 
 h1, .section {
@@ -29,7 +35,14 @@ h1, .section {
 }
 
 a {
+    color: @highlight;
     display: inline-block;
+    transform-origin: center;
+    transform: scale(0);
+    transition: transform 0.3s ease-out;
+}
+
+.section a {
     width: 16em;
     margin: 0 1em;
     padding: 1em 0;
@@ -39,10 +52,33 @@ a {
     }
 }
 
-a:hover {
+.icon {
+    position: relative;
+    margin: 0 0.8em;
+
+    img {
+        width: 3em;
+        height: 3em;
+    }
+
+    div {
+        white-space: nowrap;
+        text-align: left;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 1em;
+        padding: 0.8em 1em 0.8em 0;
+        transition: opacity 0.3s, top 0.3s;
+    }
+
+    &:hover div.open {
+        opacity: 1;
+        top: 2.3em;
+    }
 }
 
-img {
+.slash {
     display: block;
     margin: 0 auto;
     height: 8em;
