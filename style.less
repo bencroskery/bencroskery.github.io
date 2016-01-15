@@ -10,6 +10,7 @@
 body {
     background: #32333a;
     color: #FFF;
+    opacity: 0;
     transition: opacity 1s;
 }
 
@@ -55,6 +56,7 @@ a {
 .icon {
     position: relative;
     margin: 0 0.8em;
+    display: inline-block;
 
     img {
         width: 3em;
@@ -62,17 +64,20 @@ a {
     }
 
     div {
+        color: @highlight;
         white-space: nowrap;
         text-align: left;
         opacity: 0;
+        pointer-events: none;
         position: absolute;
-        left: 0;
+        left: -1em;
         top: 1em;
-        padding: 0.8em 1em 0.8em 0;
+        padding: 1em 2em 1em 1em;
         transition: opacity 0.3s, top 0.3s;
     }
 
-    &:hover div.open {
+    &:hover div {
+        pointer-events: initial;
         opacity: 1;
         top: 2.3em;
     }
