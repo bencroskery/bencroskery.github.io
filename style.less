@@ -74,6 +74,13 @@ a {
         top: 1em;
         padding: 1em 2em 1em 1em;
         transition: opacity 0.3s, top 0.3s;
+
+        &::selection {
+            background: #666;
+        }
+        &::-moz-selection {
+            background: #666;
+        }
     }
 
     &:hover div {
