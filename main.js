@@ -1,15 +1,11 @@
 "use strict";
-
 // Fade in body.
 setTimeout(function() {document.body.style.opacity = 1}, 0);
-
 // Scale in all links.
-var a = document.getElementsByTagName('a');
-var j = 0;
-function op() {
-    if (j < a.length) {
-        a[j++].style.transform = "scale(1)";
-        setTimeout(op, 60);
+var a = document.getElementsByTagName('a'), i = 0;
+(function o() {
+    if (i < a.length) {
+        a[i++].style.transform = "scale(1)";
+        setTimeout(o, 60);
     }
-}
-setTimeout(op, 0);
+})();
