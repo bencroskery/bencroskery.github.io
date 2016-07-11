@@ -5,7 +5,7 @@ setTimeout(function() {document.body.style.opacity = 1}, 0);
 var a = document.getElementsByTagName('a'), i = 0;
 (function o() {
     if (i < a.length) {
-        a[i++].style.transform = "scale(1)";
-        setTimeout(o, 60);
+        a[i++].style.transform = "rotate3d(0,0,0,0deg)";
+        setTimeout(o, 50);
     }
 })();

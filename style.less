@@ -39,8 +39,10 @@ a {
     color: @highlight;
     display: inline-block;
     transform-origin: center;
-    transform: scale(0);
-    transition: transform 0.3s ease-out;
+    transform: rotate3d(2, -1, -0.5, 100deg);
+    transition: transform .4s cubic-bezier(0.62, 0.46, 0.27, 1.55);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
 }
 
 .section a {
