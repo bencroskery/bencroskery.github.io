@@ -1,7 +1,16 @@
-@highlight: #ff8d30;
+---
+---
+@charset "utf-8";
+
+// Our variables
+$font-family: 'Montserrat', sans-serif;
+
+$text-color:       #FFF;
+$background-color: #32333a;
+$hightlight-color: #ff8d30;
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-family;
     text-align: center;
     box-sizing: border-box;
     text-decoration: none;
@@ -15,10 +24,14 @@ body {
 }
 
 ::selection {
-    background: @highlight;
+    background: $hightlight-color;
 }
 ::-moz-selection {
-    background: @highlight;
+    background: $hightlight-color;
+}
+
+.site-title {
+    display: block;
 }
 
 h1 {
@@ -36,7 +49,7 @@ h1, .section {
 }
 
 a {
-    color: @highlight;
+    color: $text-color;
     display: inline-block;
     transform-origin: center;
     transform: rotate3d(2, -1, -0.5, 100deg);
@@ -66,7 +79,7 @@ a {
     }
 
     div {
-        color: @highlight;
+        color: $hightlight-color;
         white-space: nowrap;
         text-align: left;
         opacity: 0;

@@ -1,0 +1,17 @@
+# Site settings
+title: Ben Croskery
+description: "Yep."
+baseurl: "" # the subpath, e.g. /blog
+url: "https://bencroskery.github.io" # the base hostname & protocol
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Social
+email: benjamincroskery@cmail.carleton.ca
+linkedin: bencroskery
+github: bencroskery
+
+# Build settings
+markdown: kramdown
