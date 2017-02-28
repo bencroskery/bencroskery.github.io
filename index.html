@@ -4,11 +4,11 @@ layout: default
 
 <div class="home">
 
-    <h2 class="page-heading">Current Projects</h2>
+    <h2 class="page-heading">Projects</h2>
     <div class="section">
         {% for project in site.projects %}
-            {% if project.category == "working" %}
-            <a href="{{ project.url }}">
+            {% if project.category == "github" %}
+            <a href="{{ project.url }}" class="flip">
                 <img class="slash" src="/img/{{ project.image }}"/>
                 <button>{{ project.title }}</button>
             </a>
@@ -16,11 +16,11 @@ layout: default
         {% endfor %}
     </div>
 
-    <h2 class="page-heading">Completed Projects</h2>
+    <h2 class="page-heading">Sites</h2>
     <div class="section">
         {% for project in site.projects %}
-            {% if project.category == "complete" %}
-            <a href="{{ project.url }}">
+            {% if project.category == "site" %}
+            <a href="{{ project.url }}" class="flip">
                 <img class="slash" src="/img/{{ project.image }}"/>
                 <button>{{ project.title }}</button>
             </a>

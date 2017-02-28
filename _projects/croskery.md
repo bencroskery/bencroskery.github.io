@@ -1,8 +1,8 @@
 ---
 layout: project
 title:  "croskeryphoto.com"
-category: complete
+category: site
 image: "croskery.svg"
 link: "http://www.croskeryphoto.com/"
 ---
-More information coming soon!
+Family business photo portfolio site built using Wordpress.

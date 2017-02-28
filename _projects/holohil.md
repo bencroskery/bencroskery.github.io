@@ -1,8 +1,10 @@
 ---
 layout: project
 title:  "holohil.com"
-category: complete
+category: site
 image: "holohil.svg"
 link: "http://www.holohil.com/"
 ---
-More information coming soon!
+The Wordpress website for Holohil.
+
+Designed the layout of the site from a base theme and created a couple small custom plugins for managing (admin) and searching (frontend) through photos and documents.

@@ -9,6 +9,8 @@ $text-color:       #FFF;
 $background-color: #32333a;
 $hightlight-color: #ff8d30;
 
+$max-width: 1200px;
+
 * {
     font-family: $font-family;
     text-align: center;
@@ -17,8 +19,8 @@ $hightlight-color: #ff8d30;
 }
 
 body {
-    background: #32333a;
-    color: #FFF;
+    background: $background-color;
+    color: $text-color;
     opacity: 0;
     transition: opacity 1s;
 }
@@ -31,6 +33,7 @@ body {
 }
 
 .site-title {
+    color: #FFF;
     display: block;
 }
 
@@ -49,8 +52,11 @@ h1, .section {
 }
 
 a {
-    color: $text-color;
+    color: $hightlight-color;
     display: inline-block;
+}
+
+.flip {
     transform-origin: center;
     transform: rotate3d(2, -1, -0.5, 100deg);
     transition: transform .4s cubic-bezier(0.62, 0.46, 0.27, 1.55);
@@ -111,6 +117,12 @@ a {
     height: 8em;
 }
 
+.border {
+    border: 1px solid;
+    padding: 0.4em;
+    border-radius: 6px;
+}
+
 button {
     display: block;
     font-size: 1.2em;
@@ -121,4 +133,10 @@ button {
     outline: 0;
     border: none;
     padding: .75em 1em .7em;
+}
+
+.post-content p {
+    max-width: $max-width;
+    line-height: 1.3em;
+    margin: 1em auto;
 }
