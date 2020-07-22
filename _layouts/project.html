@@ -9,9 +9,11 @@ layout: default
 
   <div class="post-content">
     <img class="slash flip" style="margin-bottom: 1.5em" src="/img/{{ page.image }}"/>
-    <a class="flip border" href="{{ page.link }}">LINK</a>
+    {% if page.link %}
+    <a class="flip border" style="margin: 0 2em" href="{{ page.link }}">LINK</a>
+    {% endif %}
     {% if page.repo %}
-      <a class="flip border" style="margin-left: 4em" href="{{ page.repo }}">REPO</a>
+      <a class="flip border" style="margin: 0 2em" href="{{ page.repo }}">REPO</a>
     {% endif %}
     {{ content }}
   </div>

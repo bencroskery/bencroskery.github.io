@@ -3,7 +3,6 @@ layout: project
 title:  "Socialwiki"
 category: github
 image: "socialwiki.svg"
-link: "http://ec2-52-11-47-52.us-west-2.compute.amazonaws.com/moodle/"
 repo: "https://github.com/bencroskery/moodle-mod_socialwiki/"
 ---
 A [Moodle](https://moodle.org/) plugin being developed at Carleton University by the [NMAI Laboratory](http://carleton.ca/nmai/), I am the lead developer on the project at the moment.
